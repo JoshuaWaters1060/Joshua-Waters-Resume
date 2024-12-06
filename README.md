@@ -1,5 +1,5 @@
-#Joshua-Waters-Resume
+# Joshua-Waters-Resume: 
 Joshua Waters, joshuatwaters@lewisu.edu
 
-#Credits:
+# Credits:
 Chatgpt and W3C School
