@@ -1,0 +1,186 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.highlightt {
+  color: #4db8ff;
+  font-family: "Times New Roman";
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+@keyframes slideBackground {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;  
+  height: 100%;
+  background: url('https://www.baltana.com/files/wallpapers-16/Black-Background-Design-High-Definition-Wallpaper-40665.jpg') no-repeat center center;
+  background-size: cover;
+  animation: slideBackground 30s infinite ease-in-out;  
+}
+
+
+.content {
+  max-width: 800px;
+  z-index: 1;  
+  color: white;
+}
+
+
+h4 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+
+h5 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: white;
+  font: "Times New Roman";
+}
+
+
+.nav-home {
+  margin-bottom: 1.5rem;
+}
+
+.nav-home a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+.nav-home a.active,
+.nav-home a:hover {
+  color: #4db8ff;
+}
+
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.social-icons i:hover {
+  transform: scale(1.2);
+}
+
+
+.social-icons .imessages:hover {
+  color: green;
+  text-shadow: 0 0 10px rgba(0, 255, 38, 0.8), 0 0 20px rgba(0, 122, 255, 0.6);
+}
+
+.social-icons .discord:hover {
+  color: #7289da;
+  text-shadow: 0 0 10px rgba(140, 114, 218, 0.8), 0 0 20px rgba(114, 137, 218, 0.6);
+}
+
+.social-icons .whatsapp:hover {
+  color: #25d366;
+  text-shadow: 0 0 10px rgba(37, 211, 102, 0.8), 0 0 20px rgba(37, 211, 102, 0.6);
+}
+
+.social-icons .snapchat:hover {
+  color: #fffc00;
+  text-shadow: 0 0 10px rgba(255, 252, 0, 0.8), 0 0 20px rgba(255, 252, 0, 0.6);
+}
+
+
+.nav-home a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  position: relative; 
+}
+
+
+.nav-home a::after {
+  content: ''; 
+  position: absolute; 
+  bottom: -5px; 
+  left: 0;
+  width: 0%; 
+  height: 2px; 
+  background-color: #4db8ff; 
+  transition: width 0.5s ease;
+}
+
+
+.nav-home a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: black; 
+  overflow: hidden;  
+}
+
+.hero .content {
+  z-index: 1;
+  color: white;
+  padding: 0;  
+  background: transparent;
+  margin: 0;  
+}
+
+.nav-home a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4bd8ff;
+}
